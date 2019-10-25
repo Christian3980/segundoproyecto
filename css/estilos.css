@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'FuenteDancingScript';
+  src: url('../fuente/DancingScript-Regular.ttf');
+}
+
+body{
+  font-family: 'FuenteDancingScript';
+  background-color:  #02010a;
+}
+
+header{
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction:row;
+  animation: diapositiva 1s;
+}
+
+@-webkit-keyframes diapositiva{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+header h1{
+  color: white;
+  padding-left: 30px;
+  text-shadow: 2px 2px #02010a;
+  width: 80%;
+}
+
+header nav{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  word-spacing: 10px;
+}
+
+header nav>a{
+  color: white;
+}
+
+.contenido{
+  background: #82c3a6;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenido img{
+  max-width: 900px;
+  box-shadow: 2px 2px #02010a;
+}
+
+#contenido2{
+  background: #d5c75f;
+  border: solid 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.secundario{
+  background: #d5c75f;
+  padding-top: 10px;
+  margin: 0px auto;
+}
+
+.secundario img{
+  max-width: 450px;
+  height: 250px;
+  box-shadow: 2px 2px #02010a;
+}
+
+.secundario a{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+#img-izq:hover{
+  transform: rotate(10deg);
+  box-shadow: 0px 0px #82c3a6 ;
+  border: solid 2px;
+}
+
+#img-der:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 0px 0px #82c3a6 ;
+  border: solid 2px;
+}
+
+.galeria{
+  background: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.galeria img{
+  max-width: 30%;
+  margin: 22px;
+  box-shadow: 2px 2px #02010a;
+}
+
+#img-1{
+  -webkit-filter:blur(10px);
+  filter:blur(10px);
+}
+
+#img-3{
+  -webkit-filter:sepia(90%);
+  filter:sepia(90%);
+}
+
+#img-2, #img-4, #img-6{
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction:row;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.contacto{
+  width: 25%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.terminos{
+  width: 25%;
+  padding: 15px;
+  margin: 10px;
+}
+
+.redes-sociales{
+  width: 25%;
+  padding: 15px;
+  margin: 10px
+}
+
+.derechos{
+  width: 25%;
+  padding: 15px;
+  margin: 10px;
+}
+
+#logo-facebook{
+  width: 25px;
+  height: 18px;
+  box-shadow: 2px 2px #02010a;
+}
+
+#logo-twitter{
+  width: 25px;
+  height: 18px;
+  box-shadow: 2px 2px #02010a;
+}
+
+#logo-instagram{
+  width: 25px;
+  height: 18px;
+  box-shadow: 2px 2px #02010a;
+}
+
+@media (max-width:900px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    text-align: center;
+  }
+  header nav{
+    padding-top: 0px;
+    text-align: center;
+  }
+  #contenido2{
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer>div{
+    width: 100% !important;
+  }
+}
+
+@media (max-width:900px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    text-align: center;
+  }
+  header nav{
+    padding-top: 0px;
+    text-align: center;
+  }
+  .galeria{
+    flex-direction: column;
+  }
+  .galeria img{
+    max-width: 85%;
+  }
+  footer{
+    flex-direction: column;
+  }
+  footer>div{
+    width: 100% !important;
+  }
+}
